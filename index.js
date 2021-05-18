@@ -73,7 +73,7 @@ const playGame = e => {
                 window.location.reload();
             }, 1100);
         }
-        if (counter === 9) {
+        if (counter === 9 && !win) {
             document.getElementById("board").style.display= 'none';
             document.getElementById("playerWin").style.display= 'block';
             document.getElementById("msg").innerHTML= `Ended in A Draw!!!`;
